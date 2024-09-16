@@ -1,0 +1,241 @@
+/* Prevent horizontal scrolling */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* General Layout for Homepage */
+.homepage-container {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Navigation Bar */
+.navbar {
+    width: 100%;
+    display: flex;
+    background-color: #8a2be1; 
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.navbar-logo h1 {
+    color: white;
+    font-size: 1.8rem;
+}
+
+.navbar-links a {
+    color: white;
+    margin-left: 1.5rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.navbar-links a:hover {
+    text-decoration: underline;
+}
+
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    background-image: url('3.jpg'); 
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    text-align: center;
+    color: black;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn-signup {
+    background-color: #8A2BE2;
+    border: none;
+    padding: 0.75rem 2rem;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-signup:hover {
+    background-color: #0056b3;
+}
+
+/* Our Services Section */
+.services-section {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.services-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.services-section p {
+    font-size: 1rem;
+    margin-bottom: 3rem;
+    color: #777;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1.5rem;
+}
+
+.service-card {
+    background: white;
+    padding: 2rem;
+    text-align: center;
+    width: calc(25% - 1.5rem); 
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    min-height: 250px; 
+}
+
+.service-card h3 {
+    font-size: 1.25rem;
+    margin: 1rem 0;
+}
+
+.service-card p {
+    color: #555;
+}
+
+.service-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
+}
+
+
+.drawer {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    transition: right 0.4s ease;
+    z-index: 999;
+}
+
+.drawer-open {
+    right: 0; 
+}
+
+.drawer-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.drawer h2 {
+    margin-top: 40px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.drawer p {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.drawer .btn-signup {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    margin: 10px 0;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.drawer .btn-signup:hover {
+    background-color: #0056b3;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .service-card {
+        width: calc(33% - 1.5rem); 
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .btn-signup {
+        padding: 0.65rem 1.5rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .service-card {
+        width: calc(50% - 1.5rem); 
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .btn-signup {
+        padding: 0.5rem 1.2rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .service-card {
+        width: 100%; 
+    }
+
+    .hero-section {
+        height: 50vh;
+    }
+
+    .hero-content h1 {
+        font-size: 1.75rem;
+    }
+
+    .btn-signup {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}

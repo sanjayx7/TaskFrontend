@@ -1,0 +1,113 @@
+/* Container styling */
+.about-container {
+    padding: 4rem 2rem;
+    background: linear-gradient(to right, #f7f7f7, #f0f0f0);
+    color: #333;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .about-header {
+    font-size: 3rem; 
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #4a4a4a;
+    font-family: "Poppins", sans-serif; 
+    letter-spacing: 0.05em; 
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.1; 
+  }
+  
+  
+  
+  /* Section styling */
+  .section-background {
+    background-color: #f9f9f9;
+    padding: 3rem 0;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
+  }
+  
+  .about-section {
+    margin-bottom: 3rem;
+    text-align: left;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Titles for each section */
+  .about-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #5a67d8;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* Paragraph styling */
+  .about-paragraph {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Skills List Styling */
+  .skills-list {
+    list-style-type: disc; 
+    padding-left: 2rem; 
+    font-size: 1.2rem;
+    color: #444;
+    line-height: 2.2;
+  }
+  
+  
+  .skill-item {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  
+  /* Contact Section */
+  .about-contact {
+    margin-top: 3rem;
+    text-align: left;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+  
+  .social-icon {
+    font-size: 2.5rem;
+    color: #5a67d8;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    color: #0046ad;
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (max-width: 768px) {
+    .about-header {
+      font-size: 2.5rem;
+    }
+  
+    .about-paragraph {
+      font-size: 1.1rem;
+    }
+  
+    .social-icon {
+      font-size: 2rem;
+    }
+  }
+  
